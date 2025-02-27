@@ -1,0 +1,141 @@
+# Welcome to Sonic Pi
+use_bpm  149
+use_synth :piano
+define :top_bar do
+  play :ab4
+  play :eb4
+  play :c4
+  sleep  1
+  play :ab4
+  sleep 0.5
+  play :ab4
+  sleep 1
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  
+  play :d4
+  sleep 1
+  play :d4
+  sleep 1
+  play :eb4
+  sleep 1
+  play :f4
+  sleep 1
+  
+  play :eb4
+  play :g4
+  sleep 1
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :f4
+  sleep 0.5
+  play :f4
+  sleep 0.5
+end
+
+define :bottom do
+  play :e2
+  play :ab2
+  sleep 1
+  play :eb3
+  sleep 0.5
+  play :ab3
+  play :b3
+  sleep 1
+  play :eb3
+  sleep 0.5
+  play :ab3
+  play :eb3
+  sleep 1
+  
+  play :ab2
+  play :c2
+  sleep 1
+  play :eb3
+  sleep 0.5
+  play :a3
+  play :b3
+  sleep 1
+  play :eb3
+  sleep 0.5
+  play :a3
+  play :b3
+  sleep 1
+  
+  play :bb2
+  play :e2
+  sleep 1
+  play :d3
+  sleep 0.5
+  play :a3
+  play :b3
+  sleep 1
+  play :d3
+  sleep 0.5
+  play :a3
+  play:b3
+  sleep 1
+  
+  
+end
+live_loop :peak do
+  play :ab4
+  play :eb4
+  play :c4
+  sleep  1
+  play :ab4
+  sleep 0.5
+  play :ab4
+  sleep 1
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 0.5
+  
+  play :d4
+  sleep 1
+  play :d4
+  sleep 1
+  play :eb4
+  sleep 1
+  play :f4
+  sleep 1
+  
+  play :eb4
+  play :g4
+  sleep 1
+  play :g4
+  sleep 0.5
+  play :g4
+  sleep 1
+  play :f4
+  sleep 0.5
+  play :f4
+  sleep 0.5
+  play :f4
+  sleep 0.5
+  top_bar
+  top_bar
+  
+  stop
+end
+
+
+sleep 12
+live_loop :peak2  do
+  bottom
+  bottom
+  stop
+end
+sleep 21
+sample"C:/Users/Cruz_Briseno/Downloads/Fly Away.wav"
