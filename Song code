@@ -138,4 +138,4 @@ live_loop :peak2  do
   stop
 end
 sleep 21
-sample"C:/Users/Cruz_Briseno/Downloads/Fly Away.wav"
+sample"C:/Users/Cruz_Briseno/Downloads/Fly Away (mp3cut (mp3cut.net).wav"
