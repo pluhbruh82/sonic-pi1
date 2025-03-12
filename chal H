@@ -1,0 +1,94 @@
+=begin
+
+Functions are great for when the pattern of notes (sleeps) and the actual notes are exactly the same.
+
+Parameterized functions are great for when:
+a. the pattern of notes is the same but the actual notes are different!
+b. two chunks of code are almost identical but have a few slight differences!
+
+YOUR TASK: Use a parameterized function to optimize the code below.
+
+=end
+
+use_bpm 120
+use_synth :chiplead
+define :twonotes do |n1,n2|
+  play n2
+  play n1
+  sleep 0.5
+end
+
+define :anots do
+  play :c5
+  play :c6
+  sleep 0.5
+end
+# MEASURE 1 ---------------------------
+twonotes:a4,:a5
+
+twonotes:a4,:a5
+
+twonotes:c5,:c6
+
+twonotes:a4,:a5
+
+twonotes:d5,:d6
+
+twonotes:a4,:a5
+
+twonotes:e5,:e6
+
+twonotes:d5,:d6
+
+# MEASURE 2 ---------------------------
+twonotes:c5,:c6
+
+twonotes:c5,:c6
+
+twonotes:e5,:e6
+
+twonotes:c5,:c6
+
+twonotes:g5,:g6
+
+twonotes:c4,:c5
+
+twonotes:e5,:e6
+
+twonotes:c4,:c5
+
+
+# MEASURE 3 ---------------------------
+
+twonotes:g4,:g5
+
+twonotes:g4,:g5
+
+twonotes:b4,:b5
+
+twonotes:g4,:g5
+
+twonotes:c5,:c6
+
+twonotes:g4,:g5
+
+twonotes:d5,:d6
+
+twonotes:c5,:c6
+
+# MEASURE 4 --------------------------
+twonotes:f4,:f5
+
+twonotes:f4,:f5
+
+twonotes:a4,:a5
+
+twonotes:f4,:f5
+
+twonotes:c5,:c6
+
+twonotes:f4,:f5
+
+twonotes:c5,:c6
+
+twonotes:b4,:b5
