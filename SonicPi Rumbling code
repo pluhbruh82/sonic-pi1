@@ -1,0 +1,192 @@
+use_bpm 145
+numList = [:a4,:g4,:g4,:a4,:b4,:f4,:a4,:g4,:g4,:a4,:g4,:g4,:f4,:e4,:e4]
+"C:/Users/Cruz_Briseno/Downloads/VOCALS_145BPM_D♯Major_VBV3_rumbl.wav"
+"C:/Users/Cruz_Briseno/Downloads/DRUMS_145BPM_D♯Major_VBV3_rumbl.wav"
+"C:/Users/Cruz_Briseno/Downloads/OTHER_145BPM_D♯Major_VBV3_rumbl.wav"
+x=0
+define :eights do |n1,n2,n3,n4,n5,n6,n7,n8|
+  play n1
+  sleep 0.5
+  play n2
+  sleep 0.5
+  play n3
+  sleep 0.5
+  play n4
+  sleep 0.5
+  play n5
+  sleep 0.5
+  play n6
+  sleep 0.5
+  play n7
+  sleep 0.5
+  play n8
+  sleep 0.5
+end
+live_loop :song do
+  piano
+  stop
+end
+live_loop :gtar do
+  guitar
+  stop
+end
+live_loop :vocals do
+  sample"C:/Users/Cruz_Briseno/Downloads/VOCALS_145BPM_D♯Major_VBV3_rumbl.wav",amp: 7
+  stop
+end
+live_loop :drums do
+  sample"C:/Users/Cruz_Briseno/Downloads/DRUMS_145BPM_D♯Major_VBV3_rumbl.wav",amp: 4
+  stop
+end
+live_loop :vro do
+  sample"C:/Users/Cruz_Briseno/Downloads/OTHER_145BPM_D♯Major_VBV3_rumbl.wav",amp: 10
+  stop
+end
+define :piano do
+  use_synth :piano
+  sleep 4
+  sleep 3
+  play:e4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play numList[0]
+  sleep 1
+  play numList[1]
+  sleep 0.5
+  play numList[2]
+  sleep 2.5
+  play numList[3]
+  sleep 0.5
+  play numList[4]
+  sleep 1
+  play numList[5]
+  sleep 2.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:g4
+  sleep 1
+  sleep 3
+  play:e4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play numList[6]
+  sleep 1
+  play numList[7]
+  sleep 0.5
+  play numList[8]
+  sleep 2.5
+  play numList[9]
+  sleep 1
+  play numList[10]
+  sleep 0.5
+  play numList[11]
+  sleep 2.5
+  play numList[12]
+  sleep 1
+  play numList[13]
+  sleep 0.5
+  play numList[14]
+  sleep 2.5
+  sleep 3
+  play:e4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:a4
+  sleep 1
+  play:g4
+  sleep 0.5
+  play:g4
+  sleep 2.5
+  play:a4
+  sleep 0.5
+  play:b4
+  sleep 1
+  play:f4
+  sleep 2.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:g4
+  sleep 0.5
+  play:g4
+  sleep 1
+  sleep 4
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:e4
+  sleep 0.5
+  play:f4
+  sleep 1
+  play:f4
+  sleep 0.5
+  play:f4
+  sleep 0.5
+  play:f4
+  sleep 1
+  play:g4
+  sleep 1
+  play:f4
+  sleep 1
+end
+define :guitar do
+  use_synth :fm
+  eights:e2,:e2,:e2,:e2,:e2,:e2,:e2,:e2
+  play :e2
+  sleep 0.5
+  play :e2
+  sleep 0.5
+  play :e2
+  sleep 0.5
+  play :e2
+  sleep 0.5
+  play :e2
+  sleep 1
+  play :f2
+  sleep 0.5
+  play :f2
+  sleep 0.5
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:c3,:c3,:c3,:c3,:c3,:c3,:c3,:c3
+  eights:b2,:b2,:b2,:b2,:g2,:g2,:g2,:g2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:g2,:g2,:g2,:g2,:g2,:g2,:g2,:g2
+  eights:c3,:c3,:c3,:c3,:c3,:c3,:c3,:c3
+  eights:b2,:b2,:b2,:b2,:g2,:g2,:g2,:g2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:g2,:g2,:g2,:g2,:g2,:g2,:g2,:g2
+  eights:c3,:c3,:c3,:c3,:c3,:c3,:c3,:c3
+  eights:b2,:b2,:b2,:b2,:g2,:g2,:g2,:g2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:a2,:a2,:a2,:a2,:a2,:a2,:a2,:a2
+  eights:b2,:b2,:b2,:b2,:g2,:g2,:g2,:g2
+end
